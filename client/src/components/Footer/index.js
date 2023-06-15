@@ -76,6 +76,7 @@ const Footer1 = () => {
           </div>
           <div className="col">
             <h3>
+              
               Newsletter
               <div className="underline">
                 <span></span>
