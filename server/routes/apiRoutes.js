@@ -66,7 +66,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
       userId: user._id,
     };
   }
-
+ // this is to make search case insensitive 
   if (req.query.q) {
     findParams = {
       ...findParams,
@@ -75,7 +75,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
       },
     };
   }
-
+// this is for filtering job posts based on their type.
   if (req.query.jobType) {
     let jobTypes = [];
     if (Array.isArray(req.query.jobType)) {
