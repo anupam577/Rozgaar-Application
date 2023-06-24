@@ -91,7 +91,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
       },
     };
   }
-
+// this is for filtering job posts based on their salary range
   if (req.query.salaryMin && req.query.salaryMax) {
     findParams = {
       ...findParams,
@@ -124,6 +124,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
     };
   }
 
+  // this is for filtering job posts based on their duration.
   if (req.query.duration) {
     findParams = {
       ...findParams,
@@ -133,6 +134,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
     };
   }
 
+  //  for sorting the job posts in ascending order based on one or more specified fields.
   if (req.query.asc) {
     if (Array.isArray(req.query.asc)) {
       req.query.asc.map((key) => {
@@ -148,7 +150,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
       };
     }
   }
-
+//  for sorting the job posts in descending order based on one or more specified fields.
   if (req.query.desc) {
     if (Array.isArray(req.query.desc)) {
       req.query.desc.map((key) => {
