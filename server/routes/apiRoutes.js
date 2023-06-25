@@ -173,7 +173,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
   // Job.find(findParams).collation({ locale: "en" }).sort(sortParams);
   // .skip(skip)
   // .limit(limit)
-
+// defines the aggregation pipeline for querying job posts from the database
   let arr = [
     {
       $lookup: {
