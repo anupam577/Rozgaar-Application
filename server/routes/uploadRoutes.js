@@ -5,6 +5,7 @@ const { v4: uuidv4 } = require("uuid");
 const router = express.Router();
 const path = require('path');
 
+//  for handling file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, "public/resume"); // Specify the destination folder for uploaded files
