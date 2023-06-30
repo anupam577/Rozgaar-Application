@@ -75,7 +75,7 @@ router.get("/jobs", jwtAuth, (req, res) => {
       },
     };
   }
-// this is for filtering job posts based on their type.
+// this is for filtering job posts based on their type. [fulltime, parttime, workfromhome]
   if (req.query.jobType) {
     let jobTypes = [];
     if (Array.isArray(req.query.jobType)) {
