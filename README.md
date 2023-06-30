@@ -55,8 +55,8 @@
 <a href="https://expressjs.com/" title="Express"><img src="https://github.com/get-icon/geticon/raw/master/icons/express.svg" alt="" width="31px" height="31px"></a>
 
 ## Team Members:
-- [Aman Singh](https://github.com/aman-s-20)
 - [Anupam Singh](https://github.com/anupam577)
+- [Aman Singh](https://github.com/aman-s-20)
 
 <!-- ## Description 	:mag_right:
 #### UI design:
